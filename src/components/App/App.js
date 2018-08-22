@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Job from './../Job/Job';
 
 class App extends Component {
   render() {
@@ -10,9 +11,7 @@ class App extends Component {
           <img src="gigsmart-footer-logo.png" className="App-logo"/>
           <img src="man-user.png" className="User-icon" />
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Job/>
       </div>
     );
   }
