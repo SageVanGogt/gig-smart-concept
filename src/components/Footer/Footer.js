@@ -1,18 +1,32 @@
 import React from 'react';
 import { Popover, OverlayTrigger, Button } from 'react-bootstrap';
+import './Footer.css';
 
 export const Footer = () => {
-  const popoverTop = (
-    <Popover id="popover-positioned-top" title="Popover top">
+  const calPopover = (
+    <Popover id="popover-positioned-top" title="Calendar">
       <strong>Holy guacamole!</strong> Check this info.
     </Popover>
   );
+
+  const phonePopover = (
+    <Popover id="popover-positioned-top" title="Cellphone">
+      <strong>(206)-697-1348</strong>
+    </Popover>
+  );
+
+  const messagePopover = (
+    <Popover id="popover-positioned-top" title="Message Me">
+      <strong>Send me a message</strong> <input type="text"/>
+    </Popover>
+  );
+
   return (
     <footer className="Job-footer">
       <OverlayTrigger
         trigger="click"
         placement="top"
-        overlay={popoverTop}
+        overlay={calPopover}
       >
         <Button>
           <img src="calendar.png" alt="calendar" className="footer-icon" />
@@ -21,7 +35,7 @@ export const Footer = () => {
       <OverlayTrigger
         trigger="click"
         placement="top"
-        overlay={popoverTop}
+        overlay={phonePopover}
       >
         <Button>
           <img src="phone-receiver.png" alt="phone" className="footer-icon" />
@@ -30,7 +44,7 @@ export const Footer = () => {
       <OverlayTrigger
         trigger="click"
         placement="top"
-        overlay={popoverTop}
+        overlay={messagePopover}
       >
         <Button>
           <img src="support.png" alt="message" className="footer-icon" />

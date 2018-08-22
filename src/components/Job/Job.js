@@ -92,7 +92,7 @@ class Job extends Component {
                   <img
                     src="angle-arrow-down.png"
                     alt=""
-                    className="arrow"
+                    className="arrow-not-selected"
                   />
               }
             </AccordionItemTitle>
@@ -113,7 +113,7 @@ class Job extends Component {
                   <img
                     src="angle-arrow-down.png"
                     alt=""
-                    className="arrow"
+                    className="arrow-not-selected"
                   />
               }
             </AccordionItemTitle>
@@ -134,7 +134,7 @@ class Job extends Component {
                   <img
                     src="angle-arrow-down.png"
                     alt=""
-                    className="arrow"
+                    className="arrow-not-selected"
                   />
               }
             </AccordionItemTitle>
