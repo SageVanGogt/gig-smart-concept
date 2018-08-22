@@ -122,6 +122,17 @@ class Job extends Component {
             </AccordionItemBody>
           </AccordionItem>
         </Accordion>
+        <footer className="Job-footer">
+          <div className="Job-footer--icon">
+            <img src="calendar.png" alt="calendar" className="footer-icon"/>
+          </div>
+          <div className="Job-footer--icon">
+            <img src="phone-receiver.png" alt="phone" className="footer-icon"/>
+          </div>
+          <div className="Job-footer--icon">
+            <img src="support.png" alt="message" className="footer-icon"/>
+          </div>
+        </footer>
       </div>
     )
   }
