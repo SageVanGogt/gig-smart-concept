@@ -11,11 +11,9 @@ import PropTypes from 'prop-types';
       <GoogleMap
         defaultZoom={16}
         center={position}>
-        {/* <Marker
-          key={`mapmarker-${index}`}
+        <Marker
           position={position}>
-        </Marker> */}
-
+        </Marker>
       </GoogleMap>
     );
   }));
