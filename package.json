@@ -13,7 +13,6 @@
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
-    "react-tabbordion": "^1.0.4",
     "redux": "^4.0.0",
     "router": "^1.3.2"
   },

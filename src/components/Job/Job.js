@@ -8,7 +8,7 @@ import {
   AccordionItemBody,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
-
+  
 class Job extends Component {
   constructor() {
     super()
