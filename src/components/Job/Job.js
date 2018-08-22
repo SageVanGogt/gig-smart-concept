@@ -17,7 +17,7 @@ class Job extends Component {
       user: {},
       accOneIsSelected: false,
       accTwoIsSelected: false,
-      accThreeIsSelected: false,
+      accThreeIsSelected: false
     }
   }
 
@@ -38,6 +38,11 @@ class Job extends Component {
   }
 
   toggleSelected = (accordion) => {
+    this.setState({
+      accOneIsSelected: false,
+      accTwoIsSelected: false,
+      accThreeIsSelected: false
+    });
     this.setState({ [accordion]: !this.state[accordion] });
   }
 
