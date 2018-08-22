@@ -2,4 +2,56 @@
   position: fixed;
   margin-top: 40vh;
   width: 100vw;
+  overflow: scroll;
 }
+
+.Job-overview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+  position: absolute;
+  z-index: 2;
+  margin-left: 10px;
+  width: 50%;
+  height: 230px;
+  background-color: #efefefef;
+  -webkit-box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.22), 0 10px 13px -4px rgba(0, 0, 0, 0.34), inset 0 30px 30px 0 rgba(255, 255, 255, 0.35), inset 0 -30px 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.22), 0 10px 13px -4px rgba(0, 0, 0, 0.34), inset 0 30px 30px 0 rgba(255, 255, 255, 0.35), inset 0 -30px 30px 0 rgba(0, 0, 0, 0.1); 
+}
+
+.Job-overview h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  margin: 0;
+}
+
+.Job-name h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.star-container {
+  display: flex;
+  margin: 0;
+}
+
+.star-container img {
+  height: 15px;
+}
+
+.star-container p {
+  margin: 0 0 0 5px;
+  padding-left: 5px;
+  border-left: 1px solid black;
+  font-size: .8rem;
+}
+
+.Job-rate h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+
