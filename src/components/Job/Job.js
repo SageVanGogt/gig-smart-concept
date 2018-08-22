@@ -38,11 +38,13 @@ class Job extends Component {
   }
 
   toggleSelected = (accordion) => {
-    this.setState({
-      accOneIsSelected: false,
-      accTwoIsSelected: false,
-      accThreeIsSelected: false
-    });
+    if (!this.state[accordion]) {
+      this.setState({
+        accOneIsSelected: false,
+        accTwoIsSelected: false,
+        accThreeIsSelected: false
+      });
+    }
     this.setState({ [accordion]: !this.state[accordion] });
   }
 
