@@ -16,6 +16,10 @@
   box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.22), 0 10px 13px -4px rgba(0, 0, 0, 0.34), inset 0 30px 30px 0 rgba(255, 255, 255, 0.35), inset 0 -30px 30px 0 rgba(0, 0, 0, 0.1); 
 }
 
+.Job-overview h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .Job-name h4 {
   margin: 0;
 }
@@ -24,6 +28,22 @@
   margin: 0;
 }
 
-.Job-reviews {
+.star-container {
   display: flex;
+  margin: 0;
 }
+
+.Job-reviews h4 {
+  margin: 0;
+}
+
+.star-container img {
+  height: 15px;
+}
+
+.star-container p {
+  border-left: 2px solid black;
+  font-size: .8rem;
+}
+
+

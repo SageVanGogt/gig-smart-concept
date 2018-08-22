@@ -19,11 +19,15 @@ class Job extends Component {
       <div className="Job">
         <section className="Job-overview">
           <div className='Job-reviews'>
-            <img src="star.png" alt="star"/>
-            <img src="star.png" alt="star"/>
-            <img src="star.png" alt="star"/>
-            <img src="star.png" alt="star"/>
-            <img src="star-empty.png" alt="star"/>
+            <h4>REVIEWS</h4>
+            <div className='star-container'>
+              <img src="star.png" alt="star"/>
+              <img src="star.png" alt="star"/>
+              <img src="star.png" alt="star"/>
+              <img src="star.png" alt="star"/>
+              <img src="star-empty.png" alt="star"/>
+              <p>98 Reviews</p>
+            </div>
           </div>
           <div className="Job-name">
             <h4>NAME</h4>
