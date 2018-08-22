@@ -25,7 +25,7 @@
   margin-left: 10px;
 }
 
-.arrow {
+.arrow-not-selected {
   height: 15px;
   margin: 18.72px;
 } 
@@ -93,25 +93,3 @@
 }
 
 
-.Job-footer {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  height: 50px;
-}
-
-.Job-footer--icon {
-  display: flex;
-  justify-content: center;
-  width: 33.33vw;
-  background-color: #3CB371;
-}
-
-.footer-icon {
-  margin-top: 10px;
-  height: 25px;
-}
-
-.Job-footer--icon:focus {
-  border-top: 1px solid #003a5c;
-}

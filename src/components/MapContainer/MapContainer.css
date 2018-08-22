@@ -1,5 +1,5 @@
 .Job-map {
-  position: absolute;
+  position: fixed;
   height: 40vh;
   width: 100vw;
   z-index: -3;

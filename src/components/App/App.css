@@ -8,12 +8,6 @@ and (max-device-width : 667px) {
     left: 0;
     top: 0;
   }
-  
-  .App {
-    width: 100vw;
-    height: 100vh;
-    margin: 0; 
-  }
 
   .App-header {
     background-color: #003a5c;
@@ -30,11 +24,11 @@ and (max-device-width : 667px) {
 
   .Menu-icon {
     width: 20px;
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
   .User-icon {
-    width: 20px;
-    margin-right: 10px;
+    height: 20px;
+    margin-right: 15px;
   }
 }

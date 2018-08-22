@@ -8,6 +8,7 @@ import {
   AccordionItemBody,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
+import { Footer } from '../Footer/Footer';
 
 class Job extends Component {
   constructor() {
@@ -38,11 +39,13 @@ class Job extends Component {
   }
 
   toggleSelected = (accordion) => {
-    this.setState({
-      accOneIsSelected: false,
-      accTwoIsSelected: false,
-      accThreeIsSelected: false
-    });
+    if (!this.state[accordion]) {
+      this.setState({
+        accOneIsSelected: false,
+        accTwoIsSelected: false,
+        accThreeIsSelected: false
+      });
+    }
     this.setState({ [accordion]: !this.state[accordion] });
   }
 
@@ -76,7 +79,7 @@ class Job extends Component {
         </section>
         <MapContainer />
         <Accordion>
-          <AccordionItem  onClick={() => this.toggleSelected('accOneIsSelected')}>
+          <AccordionItem onClick={() => this.toggleSelected('accOneIsSelected')}>
             <AccordionItemTitle>
               <h3 className="accordion-title">Skills</h3>
               {
@@ -89,7 +92,7 @@ class Job extends Component {
                   <img
                     src="angle-arrow-down.png"
                     alt=""
-                    className="arrow"
+                    className="arrow-not-selected"
                   />
               }
             </AccordionItemTitle>
@@ -97,7 +100,7 @@ class Job extends Component {
               <p>Javascript, React, Redux, Jest, Enzyme, CSS, SASS, HTML, Node, Express, RESTful API design</p>
             </AccordionItemBody>
           </AccordionItem>
-          <AccordionItem  onClick={() => this.toggleSelected('accTwoIsSelected')}>
+          <AccordionItem onClick={() => this.toggleSelected('accTwoIsSelected')}>
             <AccordionItemTitle>
               <h3 className="accordion-title">About Me</h3>
               {
@@ -110,7 +113,7 @@ class Job extends Component {
                   <img
                     src="angle-arrow-down.png"
                     alt=""
-                    className="arrow"
+                    className="arrow-not-selected"
                   />
               }
             </AccordionItemTitle>
@@ -131,7 +134,7 @@ class Job extends Component {
                   <img
                     src="angle-arrow-down.png"
                     alt=""
-                    className="arrow"
+                    className="arrow-not-selected"
                   />
               }
             </AccordionItemTitle>
@@ -143,17 +146,7 @@ class Job extends Component {
             </AccordionItemBody>
           </AccordionItem>
         </Accordion>
-        <footer className="Job-footer">
-          <div className="Job-footer--icon">
-            <img src="calendar.png" alt="calendar" className="footer-icon" />
-          </div>
-          <div className="Job-footer--icon">
-            <img src="phone-receiver.png" alt="phone" className="footer-icon" />
-          </div>
-          <div className="Job-footer--icon">
-            <img src="support.png" alt="message" className="footer-icon" />
-          </div>
-        </footer>
+        <Footer />
       </div>
     )
   }
