@@ -33,6 +33,10 @@ class Job extends Component {
             <h4>NAME</h4>
             <h3>Sage Vogt</h3>
           </div>
+          <div className="Job-rate">
+            <h4>RATE</h4>
+            <h3>$lets talk / hr</h3>
+          </div>
           <div className="Job-references"></div>
         </section>
         <MapContainer />
