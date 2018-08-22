@@ -17,6 +17,20 @@ class Job extends Component {
   render() {
     return (
       <div className="Job">
+        <section className="Job-overview">
+          <div className='Job-reviews'>
+            <img src="star.png" alt="star"/>
+            <img src="star.png" alt="star"/>
+            <img src="star.png" alt="star"/>
+            <img src="star.png" alt="star"/>
+            <img src="star-empty.png" alt="star"/>
+          </div>
+          <div className="Job-name">
+            <h4>NAME</h4>
+            <h3>Sage Vogt</h3>
+          </div>
+          <div className="Job-references"></div>
+        </section>
         <MapContainer />
         <Accordion>
           <AccordionItem>
@@ -37,10 +51,13 @@ class Job extends Component {
           </AccordionItem>
           <AccordionItem>
             <AccordionItemTitle>
-              <h3>Availability</h3>
+              <h3>References</h3>
             </AccordionItemTitle>
             <AccordionItemBody>
-              <p>Currently available for full time employment</p>
+              <ul>
+                <li>Such an incredible young lad - Grandma</li>
+                <li>I'd hire him if I knew how the internet worked - Dad</li>
+              </ul>
             </AccordionItemBody>
           </AccordionItem>
         </Accordion>

@@ -2,4 +2,28 @@
   position: fixed;
   margin-top: 40vh;
   width: 100vw;
+  overflow: scroll;
+}
+
+.Job-overview {
+  position: absolute;
+  z-index: 2;
+  margin-left: 10px;
+  width: 50%;
+  height: 250px;
+  background-color: #A9A9A999;
+  -webkit-box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.22), 0 10px 13px -4px rgba(0, 0, 0, 0.34), inset 0 30px 30px 0 rgba(255, 255, 255, 0.35), inset 0 -30px 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.22), 0 10px 13px -4px rgba(0, 0, 0, 0.34), inset 0 30px 30px 0 rgba(255, 255, 255, 0.35), inset 0 -30px 30px 0 rgba(0, 0, 0, 0.1); 
+}
+
+.Job-name h4 {
+  margin: 0;
+}
+
+.Job-name h3 {
+  margin: 0;
+}
+
+.Job-reviews {
+  display: flex;
 }
