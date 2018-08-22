@@ -14,7 +14,10 @@ class Job extends Component {
     super()
 
     this.state = {
-      user: {}
+      user: {},
+      accOneIsSelected: false,
+      accTwoIsSelected: false,
+      accThreeIsSelected: false,
     }
   }
 
@@ -32,6 +35,10 @@ class Job extends Component {
     } catch (error) {
       throw error;
     }
+  }
+
+  toggleSelected = (accordion) => {
+    this.setState({[accordion]: !this.state[accordion]});
   }
 
   render() {
@@ -65,7 +72,7 @@ class Job extends Component {
         <MapContainer />
         <Accordion>
           <AccordionItem>
-            <AccordionItemTitle>
+            <AccordionItemTitle onClick={() => this.toggleSelected('accOneIsSelected')}>
               <h3 className="accordion-title">Skills</h3>
               <img 
                 src="angle-arrow-down.png" 
@@ -83,7 +90,7 @@ class Job extends Component {
             </AccordionItemBody>
           </AccordionItem>
           <AccordionItem>
-            <AccordionItemTitle>
+            <AccordionItemTitle  onClick={() => this.toggleSelected('accTwoIsSelected')}>
               <h3 className="accordion-title">About Me</h3>
               <img 
                 src="angle-arrow-down.png" 
@@ -101,7 +108,7 @@ class Job extends Component {
             </AccordionItemBody>
           </AccordionItem>
           <AccordionItem>
-            <AccordionItemTitle>
+            <AccordionItemTitle  onClick={() => this.toggleSelected('accThreeIsSelected')}>
               <h3 className="accordion-title">References</h3>
               <img 
                 src="angle-arrow-down.png" 
