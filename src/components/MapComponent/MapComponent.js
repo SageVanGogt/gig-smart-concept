@@ -4,17 +4,18 @@ import { withScriptjs, withGoogleMap, GoogleMap, Marker }
 import PropTypes from 'prop-types';
 
   export const MapComponent = withScriptjs(withGoogleMap((
-    { position, markerCoords, toggleShowing, ...props }
+    { position, ...props }
   ) => {
  
     return (
       <GoogleMap
         defaultZoom={16}
         center={position}>
-        <Marker
+        {/* <Marker
           key={`mapmarker-${index}`}
-          position={{lat: lat, lng: lng}}>
-        </Marker>
+          position={position}>
+        </Marker> */}
+
       </GoogleMap>
     );
   }));

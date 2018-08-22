@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { mapKey } from './../../../apiKey';
+import { mapKey } from './../../apiKey';
 import PropTypes from 'prop-types';
 import MapComponent from '../MapComponent/MapComponent';
 import './MapContainer.css';
@@ -36,10 +36,7 @@ export class MapContainer extends Component {
 }
 
 MapContainer.propTypes = {
-  toggleShowing: PropTypes.func,
-  pickupLocations: PropTypes.array,
-  currentLocation: PropTypes.object,
-  rides: PropTypes.array
+  jobLocation: PropTypes.object
 };
 
 export default MapContainer;
