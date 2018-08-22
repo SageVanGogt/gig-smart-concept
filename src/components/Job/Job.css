@@ -115,9 +115,13 @@
   justify-content: center;
   width: 33.33vw;
   background-color: #3CB371;
-  border: 1px solid black;
 }
 
 .footer-icon {
+  margin-top: 10px;
   height: 25px;
+}
+
+.Job-footer--icon:focus {
+  border-top: 1px solid #003a5c;
 }

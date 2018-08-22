@@ -59,7 +59,7 @@ class Job extends Component {
           </div>
           <div className="Job-rate">
             <h4>RATE</h4>
-            <h3>$lets talk / hr</h3>
+            <h3>$10/hr</h3>
           </div>
         </section>
         <MapContainer />
