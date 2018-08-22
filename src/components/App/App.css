@@ -1,0 +1,32 @@
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+  .App {
+    width: 100vw;
+    height: 100vh;
+    margin: 0; 
+  }
+
+  .App-header {
+    background-color: #003a5c;
+    height: 65px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .App-logo {
+    width: 150px;
+  }
+
+  .Menu-icon {
+    width: 20px;
+    margin-left: 10px;
+  }
+
+  .User-icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+}
