@@ -5,6 +5,46 @@
   overflow: scroll;
 }
 
+.accordion-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#accordion__title-0,
+#accordion__title-1,
+#accordion__title-2 {
+  padding: 0;
+}
+
+.accordion__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__title h3 {
+  margin-left: 10px;
+}
+
+.arrow {
+  height: 15px;
+  margin: 18.72px;
+} 
+
+.accordion__title:focus .arrow {
+  display: none;
+}
+
+.arrow-selected {
+  display: none;
+  height: 15px;
+  margin: 18.72px;
+}
+
+.accordion__title:focus .arrow-selected {
+  display: block;
+}
+
+
 .Job-overview {
   display: flex;
   flex-direction: column;
@@ -53,5 +93,3 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
 }
-
-

@@ -43,7 +43,17 @@ class Job extends Component {
         <Accordion>
           <AccordionItem>
             <AccordionItemTitle>
-              <h3>Skills</h3>
+              <h3 className="accordion-title">Skills</h3>
+              <img 
+                src="angle-arrow-down.png" 
+                alt="" 
+                className="arrow"
+              />
+               <img 
+                src="up-arrow.png" 
+                alt="" 
+                className="arrow-selected"
+              />
             </AccordionItemTitle>
             <AccordionItemBody>
               <p>Javascript, React, Redux, Jest, Enzyme, CSS, SASS, HTML, Node, Express, RESTful API design</p>
@@ -51,7 +61,17 @@ class Job extends Component {
           </AccordionItem>
           <AccordionItem>
             <AccordionItemTitle>
-              <h3>About Me</h3>
+              <h3 className="accordion-title">About Me</h3>
+              <img 
+                src="angle-arrow-down.png" 
+                alt="" 
+                className="arrow"
+              />
+              <img 
+                src="up-arrow.png" 
+                alt="" 
+                className="arrow-selected"
+              />
             </AccordionItemTitle>
             <AccordionItemBody>
               <p>Recent grad of Colorado College, avid mountain biker, climber, and innovation enthusiast. Does not like long walks on the beach.</p>
@@ -59,7 +79,17 @@ class Job extends Component {
           </AccordionItem>
           <AccordionItem>
             <AccordionItemTitle>
-              <h3>References</h3>
+              <h3 className="accordion-title">References</h3>
+              <img 
+                src="angle-arrow-down.png" 
+                alt="" 
+                className="arrow"
+              />
+              <img 
+                src="up-arrow.png" 
+                alt="" 
+                className="arrow-selected"
+              />
             </AccordionItemTitle>
             <AccordionItemBody>
               <ul>
