@@ -30,20 +30,10 @@
   margin: 18.72px;
 } 
 
-.accordion__title:focus .arrow {
-  display: none;
-}
-
 .arrow-selected {
-  display: none;
   height: 15px;
   margin: 18.72px;
 }
-
-.accordion__title:focus .arrow-selected {
-  display: block;
-}
-
 
 .Job-overview {
   display: flex;

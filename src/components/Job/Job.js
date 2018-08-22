@@ -8,7 +8,7 @@ import {
   AccordionItemBody,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
-  
+
 class Job extends Component {
   constructor() {
     super()
@@ -21,7 +21,7 @@ class Job extends Component {
     }
   }
 
-  componentDidMount = () =>  {
+  componentDidMount = () => {
     this.fetchUser();
   }
 
@@ -38,7 +38,7 @@ class Job extends Component {
   }
 
   toggleSelected = (accordion) => {
-    this.setState({[accordion]: !this.state[accordion]});
+    this.setState({ [accordion]: !this.state[accordion] });
   }
 
   render() {
@@ -48,11 +48,11 @@ class Job extends Component {
           <div className='Job-reviews'>
             <h4>REVIEWS</h4>
             <div className='star-container'>
-              <img src="star.png" alt="star"/>
-              <img src="star.png" alt="star"/>
-              <img src="star.png" alt="star"/>
-              <img src="star.png" alt="star"/>
-              <img src="star-empty.png" alt="star"/>
+              <img src="star.png" alt="star" />
+              <img src="star.png" alt="star" />
+              <img src="star.png" alt="star" />
+              <img src="star.png" alt="star" />
+              <img src="star-empty.png" alt="star" />
               <p>{this.state.user.public_repos} Reviews</p>
             </div>
           </div>
@@ -71,55 +71,64 @@ class Job extends Component {
         </section>
         <MapContainer />
         <Accordion>
-          <AccordionItem>
-            <AccordionItemTitle onClick={() => this.toggleSelected('accOneIsSelected')}>
+          <AccordionItem  onClick={() => this.toggleSelected('accOneIsSelected')}>
+            <AccordionItemTitle>
               <h3 className="accordion-title">Skills</h3>
-              <img 
-                src="angle-arrow-down.png" 
-                alt="" 
-                className="arrow"
-              />
-               <img 
-                src="up-arrow.png" 
-                alt="" 
-                className="arrow-selected"
-              />
+              {
+                this.state.accOneIsSelected ?
+                  <img
+                    src="up-arrow.png"
+                    alt=""
+                    className="arrow-selected"
+                  /> :
+                  <img
+                    src="angle-arrow-down.png"
+                    alt=""
+                    className="arrow"
+                  />
+              }
             </AccordionItemTitle>
             <AccordionItemBody>
               <p>Javascript, React, Redux, Jest, Enzyme, CSS, SASS, HTML, Node, Express, RESTful API design</p>
             </AccordionItemBody>
           </AccordionItem>
-          <AccordionItem>
-            <AccordionItemTitle  onClick={() => this.toggleSelected('accTwoIsSelected')}>
+          <AccordionItem  onClick={() => this.toggleSelected('accTwoIsSelected')}>
+            <AccordionItemTitle>
               <h3 className="accordion-title">About Me</h3>
-              <img 
-                src="angle-arrow-down.png" 
-                alt="" 
-                className="arrow"
-              />
-              <img 
-                src="up-arrow.png" 
-                alt="" 
-                className="arrow-selected"
-              />
+              {
+                this.state.accTwoIsSelected ?
+                  <img
+                    src="up-arrow.png"
+                    alt=""
+                    className="arrow-selected"
+                  /> :
+                  <img
+                    src="angle-arrow-down.png"
+                    alt=""
+                    className="arrow"
+                  />
+              }
             </AccordionItemTitle>
             <AccordionItemBody>
               <p>{this.state.user.bio}</p>
             </AccordionItemBody>
           </AccordionItem>
-          <AccordionItem>
-            <AccordionItemTitle  onClick={() => this.toggleSelected('accThreeIsSelected')}>
+          <AccordionItem onClick={() => this.toggleSelected('accThreeIsSelected')}>
+            <AccordionItemTitle>
               <h3 className="accordion-title">References</h3>
-              <img 
-                src="angle-arrow-down.png" 
-                alt="" 
-                className="arrow"
-              />
-              <img 
-                src="up-arrow.png" 
-                alt="" 
-                className="arrow-selected"
-              />
+              {
+                this.state.accThreeIsSelected ?
+                  <img
+                    src="up-arrow.png"
+                    alt=""
+                    className="arrow-selected"
+                  /> :
+                  <img
+                    src="angle-arrow-down.png"
+                    alt=""
+                    className="arrow"
+                  />
+              }
             </AccordionItemTitle>
             <AccordionItemBody>
               <ul>
@@ -131,13 +140,13 @@ class Job extends Component {
         </Accordion>
         <footer className="Job-footer">
           <div className="Job-footer--icon">
-            <img src="calendar.png" alt="calendar" className="footer-icon"/>
+            <img src="calendar.png" alt="calendar" className="footer-icon" />
           </div>
           <div className="Job-footer--icon">
-            <img src="phone-receiver.png" alt="phone" className="footer-icon"/>
+            <img src="phone-receiver.png" alt="phone" className="footer-icon" />
           </div>
           <div className="Job-footer--icon">
-            <img src="support.png" alt="message" className="footer-icon"/>
+            <img src="support.png" alt="message" className="footer-icon" />
           </div>
         </footer>
       </div>
