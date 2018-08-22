@@ -1,11 +1,12 @@
 import React from 'react';
 import { Popover, OverlayTrigger, Button } from 'react-bootstrap';
 import './Footer.css';
+import Calendar from 'react-calendar'
 
 export const Footer = () => {
   const calPopover = (
     <Popover id="popover-positioned-top" title="Calendar">
-      <strong>Holy guacamole!</strong> Check this info.
+      <Calendar />
     </Popover>
   );
 
@@ -17,7 +18,7 @@ export const Footer = () => {
 
   const messagePopover = (
     <Popover id="popover-positioned-top" title="Message Me">
-      <strong>Send me a message</strong> <input type="text"/>
+      <strong>Email: vogt.sage@gmail.com</strong> 
     </Popover>
   );
 
