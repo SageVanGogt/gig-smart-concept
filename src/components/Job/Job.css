@@ -100,18 +100,19 @@
   height: 50px;
 }
 
-.Job-footer--icon {
+.btn-default {
   display: flex;
   justify-content: center;
   width: 33.33vw;
   background-color: #3CB371;
+  border: none;
+  border-radius: 0;
 }
 
 .footer-icon {
-  margin-top: 10px;
   height: 25px;
 }
 
-.Job-footer--icon:focus {
+.btn-default:hover {
   border-top: 1px solid #003a5c;
 }

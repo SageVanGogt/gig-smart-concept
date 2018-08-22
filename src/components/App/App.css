@@ -8,12 +8,6 @@ and (max-device-width : 667px) {
     left: 0;
     top: 0;
   }
-  
-  .App {
-    width: 100vw;
-    height: 100vh;
-    margin: 0; 
-  }
 
   .App-header {
     background-color: #003a5c;

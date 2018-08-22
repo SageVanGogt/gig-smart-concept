@@ -8,6 +8,7 @@ import {
   AccordionItemBody,
 } from 'react-accessible-accordion';
 import 'react-accessible-accordion/dist/fancy-example.css';
+import { Popover, OverlayTrigger, Button } from 'react-bootstrap';
 
 class Job extends Component {
   constructor() {
@@ -49,6 +50,11 @@ class Job extends Component {
   }
 
   render() {
+    const popoverTop = (
+      <Popover id="popover-positioned-top" title="Popover top">
+        <strong>Holy guacamole!</strong> Check this info.
+      </Popover>
+    );
     return (
       <div className="Job">
         <section className="Job-overview">
@@ -78,7 +84,7 @@ class Job extends Component {
         </section>
         <MapContainer />
         <Accordion>
-          <AccordionItem  onClick={() => this.toggleSelected('accOneIsSelected')}>
+          <AccordionItem onClick={() => this.toggleSelected('accOneIsSelected')}>
             <AccordionItemTitle>
               <h3 className="accordion-title">Skills</h3>
               {
@@ -99,7 +105,7 @@ class Job extends Component {
               <p>Javascript, React, Redux, Jest, Enzyme, CSS, SASS, HTML, Node, Express, RESTful API design</p>
             </AccordionItemBody>
           </AccordionItem>
-          <AccordionItem  onClick={() => this.toggleSelected('accTwoIsSelected')}>
+          <AccordionItem onClick={() => this.toggleSelected('accTwoIsSelected')}>
             <AccordionItemTitle>
               <h3 className="accordion-title">About Me</h3>
               {
@@ -146,15 +152,33 @@ class Job extends Component {
           </AccordionItem>
         </Accordion>
         <footer className="Job-footer">
-          <div className="Job-footer--icon">
-            <img src="calendar.png" alt="calendar" className="footer-icon" />
-          </div>
-          <div className="Job-footer--icon">
-            <img src="phone-receiver.png" alt="phone" className="footer-icon" />
-          </div>
-          <div className="Job-footer--icon">
-            <img src="support.png" alt="message" className="footer-icon" />
-          </div>
+          <OverlayTrigger
+            trigger="click"
+            placement="top"
+            overlay={popoverTop}
+          >
+            <Button>
+              <img src="calendar.png" alt="calendar" className="footer-icon" /> 
+            </Button>
+          </OverlayTrigger>
+          <OverlayTrigger
+            trigger="click"
+            placement="top"
+            overlay={popoverTop}
+          >
+            <Button>
+              <img src="phone-receiver.png" alt="phone" className="footer-icon" />
+            </Button>
+          </OverlayTrigger>
+          <OverlayTrigger
+            trigger="click"
+            placement="top"
+            overlay={popoverTop}
+          >
+            <Button>
+              <img src="support.png" alt="message" className="footer-icon" />
+            </Button>
+          </OverlayTrigger>
         </footer>
       </div>
     )
