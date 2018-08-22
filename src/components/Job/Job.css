@@ -5,6 +5,36 @@
   overflow: scroll;
 }
 
+.accordion-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#accordion__title-0,
+#accordion__title-1,
+#accordion__title-2 {
+  padding: 0;
+}
+
+.accordion__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion__title h3 {
+  margin-left: 10px;
+}
+
+.arrow {
+  height: 15px;
+  margin: 18.72px;
+} 
+
+.arrow-selected {
+  height: 15px;
+  margin: 18.72px;
+}
+
 .Job-overview {
   display: flex;
   flex-direction: column;
@@ -52,6 +82,36 @@
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
+  font-size: .95rem;
+}
+
+.Job-avail h3 {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: .95rem;
 }
 
 
+.Job-footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+}
+
+.Job-footer--icon {
+  display: flex;
+  justify-content: center;
+  width: 33.33vw;
+  background-color: #3CB371;
+}
+
+.footer-icon {
+  margin-top: 10px;
+  height: 25px;
+}
+
+.Job-footer--icon:focus {
+  border-top: 1px solid #003a5c;
+}

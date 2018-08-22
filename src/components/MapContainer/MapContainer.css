@@ -2,7 +2,7 @@
   position: absolute;
   height: 40vh;
   width: 100vw;
-  z-index: -1;
+  z-index: -3;
 }
 
 .map-container {
