@@ -53,11 +53,14 @@ class Job extends Component {
             <h4>NAME</h4>
             <h3>{this.state.user.name}</h3>
           </div>
+          <div className="Job-avail">
+            <h4>AVAILABILITY</h4>
+            <h3>mon / 7:00pm - 8:00pm</h3>
+          </div>
           <div className="Job-rate">
             <h4>RATE</h4>
             <h3>$lets talk / hr</h3>
           </div>
-          <div className="Job-references"></div>
         </section>
         <MapContainer />
         <Accordion>
