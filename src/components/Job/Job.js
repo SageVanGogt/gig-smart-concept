@@ -23,7 +23,15 @@ class Job extends Component {
   }
 
   fetchUser = async () => {
-    
+    try {
+      let response = await fetch('https://api.github.com/users/SageVanGogt');
+      let user = await response.json();
+      this.setState({
+        user
+      })
+    } catch (error) {
+      throw error;
+    }
   }
 
   render() {
@@ -38,12 +46,12 @@ class Job extends Component {
               <img src="star.png" alt="star"/>
               <img src="star.png" alt="star"/>
               <img src="star-empty.png" alt="star"/>
-              <p>98 Reviews</p>
+              <p>{this.state.user.public_repos} Reviews</p>
             </div>
           </div>
           <div className="Job-name">
             <h4>NAME</h4>
-            <h3>Sage Vogt</h3>
+            <h3>{this.state.user.name}</h3>
           </div>
           <div className="Job-rate">
             <h4>RATE</h4>
@@ -86,7 +94,7 @@ class Job extends Component {
               />
             </AccordionItemTitle>
             <AccordionItemBody>
-              <p>Recent grad of Colorado College, avid mountain biker, climber, and innovation enthusiast. Does not like long walks on the beach.</p>
+              <p>{this.state.user.bio}</p>
             </AccordionItemBody>
           </AccordionItem>
           <AccordionItem>
