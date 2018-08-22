@@ -12,6 +12,18 @@ import 'react-accessible-accordion/dist/fancy-example.css';
 class Job extends Component {
   constructor() {
     super()
+
+    this.state = {
+      user: {}
+    }
+  }
+
+  componentDidMount = () =>  {
+    this.fetchUser();
+  }
+
+  fetchUser = async () => {
+    
   }
 
   render() {
